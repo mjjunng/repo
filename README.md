@@ -20,7 +20,7 @@
 
 #### 초기 세팅
 
-- 해당 레포지토리를 clone 하고, 본인 github 아이디로 브랜치를 만들어서 해당 브랜치로 이동하기
+- 해당 레포지토리를 clone 하고, **본인의 github 아이디**로 브랜치를 파서 해당 브랜치로 이동하기
 - 작업 후 본인 브랜치로 푸쉬 후 pull request 열기
 
 #### 매주 작업하면서
@@ -31,7 +31,18 @@
 
 ````
 baekjoon
-ㄴ 본인의 github 이름 (ex. `dldbdud314`)
+ㄴ github 아이디 (ex. `dldbdud314`)
   ㄴ 해당 주차 (ex. `week1`)
     ㄴ 문제 파일 (ex. `N-Queen.py`)
 ````
+
+## 일정
+
+### 1주차 문제 목록
+
+- [압축](https://school.programmers.co.kr/learn/courses/30/lessons/17684)
+- [주차요금계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)
+- [디펜스 게임](https://school.programmers.co.kr/learn/courses/30/lessons/142085)
+- [N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952)
+
+#### 12/27 - 발표자 : 이유영
