@@ -1,6 +1,6 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/12952
 
-# DFS
+# dfs
 # O(n^2)
 def solution(n:int)->int:
 

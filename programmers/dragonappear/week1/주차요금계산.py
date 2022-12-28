@@ -2,8 +2,8 @@
 from typing import List
 import math
 
-
 # OOP 방식
+# O(nlogn)
 class Park:
 
     def __init__(self,default_time:int,default_fee:int,unit_time:int,unit_fee:int) -> None:
