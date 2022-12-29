@@ -1,10 +1,10 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/17684
 from typing import List
 
-
-# O(KN) 
-# k = [1,N]
-# N = length of str
+# 투포인터
+# O(kn) 
+# k = [1,n]
+# n = length of str
 def solution(msg:str)->List:
     answer = []
         

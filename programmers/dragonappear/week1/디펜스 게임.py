@@ -1,5 +1,4 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/142085
-
 from collections import deque
 import heapq as hq
 
@@ -27,5 +26,4 @@ def solution(n,k,enemy):
             k-=1
             answer += 1
         
-
     return answer
