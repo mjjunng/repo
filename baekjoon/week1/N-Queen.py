@@ -1,5 +1,6 @@
+answer = 0
+
 def solution(n):
-    answer = 0
     queen = [0 for _ in range(n)]
 
     def check(x):
@@ -9,7 +10,7 @@ def solution(n):
         return True
 
     def dfs(p):
-        nonlocal answer
+        global answer
         if p == n:
             answer += 1
             return
