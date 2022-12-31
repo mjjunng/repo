@@ -1,3 +1,4 @@
+# parametric search
 # 62.5 / 100.0
 def can_cross(n, k, check):
     cur_len = 0
@@ -8,7 +9,7 @@ def can_cross(n, k, check):
     return cur_len + k
 
 
-def solution(n, k, enemy):
+def solution2(n, k, enemy):
     if len(enemy) <= k:
         return len(enemy)
 
@@ -23,6 +24,24 @@ def solution(n, k, enemy):
             l = m + 1
 
     return m
+
+
+# heapq 활용 - 풀이 참고
+from heapq import heappush, heappop
+
+
+def solution(n, k, enemy):
+    queue = []
+    for rnd, x in enumerate(enemy):
+        heappush(queue, x)
+
+        if len(queue) > k:
+            n -= heappop(queue)
+
+        if n < 0:
+            return rnd
+
+    return len(enemy)
 
 
 print(solution(7, 3, [4, 2, 4, 5, 3, 3, 1]))
