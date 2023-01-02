@@ -6,7 +6,7 @@
 
 > 매주 온라인 회의에서 정해진 한 사람이 발표하는 형식으로 진행합니다.
 
-- 일시: 매주 금요일 9시 온라인
+- 일시: 매주 금요일 9시 온라인 / 풀리퀘는 수요일 자정까지
 - 참고 사이트: 백준, 프로그래머스
 - 진행 사이클 : 이유영 -> 윤용현 -> 정민지 -> 형섭 -> 예솜
 
@@ -16,7 +16,7 @@
 
 ### 3. PR & Code Review
 
-> 미팅 하루 전 자정까지 PR 날립니다.<br>
+> 미팅 이틀전 자정까지 PR 날립니다.<br>
 > 다른 분들 코드를 보면서 궁금하거나, 더 개선할 여지가 있는 부분은 자유롭게 리뷰해주세요.<br>
 
 #### 초기 세팅
@@ -48,3 +48,13 @@ baekjoon
 - [N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952)
 
 #### 12/30 금요일 - 발표자 : 이유영
+
+### 2주차 문제 목록
+
+- [감시](https://www.acmicpc.net/problem/15683)
+- [양팔저울](https://www.acmicpc.net/problem/2629)
+- [숌사이수열](https://www.acmicpc.net/problem/1469)
+- [연산자끼워넣기](https://www.acmicpc.net/problem/14888)
+- [미로만들기](https://www.acmicpc.net/problem/1347)
+
+#### 01/06 금요일 - 발표자 : 윤용현
