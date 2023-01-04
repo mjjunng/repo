@@ -42,7 +42,7 @@ class Park:
         if self.cars[number][0]=="IN":
             last_in_time=self.cars[number][1]
             total_parking_minutes=self.cars[number][2]
-            minutes = self.get_parking_minutes("23:59",last_in_time)
+            minutes = self._get_parking_minutes("23:59",last_in_time)
             return total_parking_minutes + minutes
         return car[1][2]
             
@@ -65,7 +65,7 @@ class Park:
 
 class Solution:
     def solution(self,fees, records):
-        park = Park(int(fees[0]),int(fees[1]),int(fees[2]),int(fees[3]))
+        park = Park(fees[0],fees[1],fees[2],fees[3])
 
         for record in records: # O(1000)
             info = record.split()
