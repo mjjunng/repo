@@ -8,10 +8,13 @@ def dfs(level:int)->None:
 
     global result
 
+    # 종료
+    # 출력하고 종료
     if level == n*2:
         print(*result)
         sys.exit()
     
+    # 이미 방문했으면 다음 레벨
     if level<n*2 and result[level] is not None:
         dfs(level+1)
         return
