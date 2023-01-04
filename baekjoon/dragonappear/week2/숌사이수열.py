@@ -1,10 +1,37 @@
 # https://www.acmicpc.net/problem/1469 숌사이수열
 
+import sys
+input = sys.stdin.readline
 
+# dfs
+def dfs(level:int)->None:
 
+    global result
+
+    if level == n*2:
+        print(*result)
+        sys.exit()
+    
+    if level<n*2 and result[level] is not None:
+        dfs(level+1)
+        return
+
+    for i in range(n):
+        if ((visited[i]==False) 
+                and (level + x[i] + 1 < 2*n) 
+                and (result[level]==None) 
+                and (result[level+x[i]+1]==None)):
+            visited[i]=True
+            result[level] = result[level+x[i]+1] = x[i]
+            dfs(level+1)
+            result[level] = result[level+x[i]+1] = None
+            visited[i]=False
 
 if __name__ == "__main__":
-    
-    arr = ["0","0","0"]
-    
-    print(arr.count("0"))
+    n = int(input())
+    x =  list(map(int,input().split()))    
+    visited = [False] * (2*n)
+    result = [None] * (2*n)
+    x.sort()
+    dfs(0)
+    print(-1)
