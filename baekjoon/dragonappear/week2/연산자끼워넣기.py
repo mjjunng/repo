@@ -33,8 +33,8 @@ def calculate(total:int,number:int,op_type:int)->int:
 if __name__ == "__main__":
     # input
     n = int(input())
-    numbers = list(map(int,sys.stdin.readline().split()))
-    operators = list(map(int,sys.stdin.readline().split()))
+    numbers = list(map(int,input().split()))
+    operators = list(map(int,input().split()))
     OPERTATOR = len(operators)
 
     # 초기화
