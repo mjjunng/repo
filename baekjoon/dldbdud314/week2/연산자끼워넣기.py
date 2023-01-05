@@ -1,8 +1,15 @@
+'''
+BRUTEFORCE: O(n^2)
+
+1. 주어진 연산자 개수대로 연산자 리스트 생성 -> operators
+2. 연산자 리스트 순열 돌면서(set으로 중복제거) 연산, 최대값/최소값 갱신
+'''
 from itertools import permutations
 
 OPS = ('+', '-', '*', '/')
 
 
+# 연산 메소드
 def calc(op1, op2, opr):
     if opr == OPS[0]:
         return op1 + op2
