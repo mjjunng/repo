@@ -5,6 +5,8 @@ input = sys.stdin.readline
 
 """풀이
 <DFS>
+시간복잡도: O(N * V^2) (V[1,8):cctv 개수,N[1,8]:그래프 길이)
+공간복잡도: O(N^2)
 
 왜: 
 - cctv 타입마다 방향이 다르고, cctv 각각의 방향이 결과에 영향을 주기 때문에 각 cctv의 모든 방향에 대해서 탐색을 해야함.
@@ -45,8 +47,8 @@ def dfs(graph:List[List[str]],level:int)->None:
     copy_graph = [ element[::] for element in graph] # 그래프 복사
     col, row, type = cctvs[level] # 0,0,'1'
 
-    for direction in directions[int(type)-1]:
-        process(col, row, direction, copy_graph) # 그래프 순회 및 체크
+    for direction in directions[int(type)-1]: #O(4)
+        process(col, row, direction, copy_graph) # 그래프 순회 및 체크 O(n)
         dfs(copy_graph, level + 1) # 현재 그래프에서 dfs
         copy_graph = [ element[::] for element in graph] # 그래프 리셋
 

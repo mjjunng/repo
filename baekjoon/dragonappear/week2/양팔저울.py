@@ -62,5 +62,3 @@ if __name__ == "__main__":
             results.append("N")
     
     print(*results)
-
-
