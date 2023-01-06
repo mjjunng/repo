@@ -58,3 +58,13 @@ baekjoon
 - [미로만들기](https://www.acmicpc.net/problem/1347)
 
 #### 01/06 금요일 - 발표자 : 윤용현
+
+### 3주차 문제 목록
+
+- [택배 배달과 수거하기](https://school.programmers.co.kr/learn/courses/30/lessons/150369)
+- [이모티콘 할인행사](https://school.programmers.co.kr/learn/courses/30/lessons/150368)
+- [오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
+- [두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
+- [양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)
+
+#### 01/13 금요일 - 발표자 : 정민지
