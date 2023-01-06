@@ -2,6 +2,19 @@
 import sys
 input = sys.stdin.readline
 
+
+"""풀이
+<DFS>
+
+문제특징:
+- 숫자 자리는 고정
+- 숫자 사이에 들어가는 연산자만 순서변경하면서 계산
+
+연산자에 대한 순열문제여서 DFS로 풀이
+
+"""
+
+
 # 재귀
 def recursive(level:int,total:int)->None:
     global mx,mn

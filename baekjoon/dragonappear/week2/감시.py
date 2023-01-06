@@ -3,6 +3,33 @@ import sys
 from typing import List
 input = sys.stdin.readline
 
+"""풀이
+<DFS>
+
+왜: 
+- cctv 타입마다 방향이 다르고, cctv 각각의 방향이 결과에 영향을 주기 때문에 각 cctv의 모든 방향에 대해서 탐색을 해야함.
+- 브루트포스로 풀기에는 코드가 너무 김.
+- 노드를 cctv로 설정한 후 dfs로 품.
+
+노드: cctv
+과정:
+
+1. 초기화
+- cctv 좌표,방향 저장
+- cctv 타입별 방향 설정
+
+2. dfs(저장된 cctv 좌표순으로 진행)
+
+- 종료점
+    - cctv 끝까지 도달한 경우 그래프 색칠이 완료되었으므로, 사각지대 최솟값 업데이트
+
+- 해당 cctv 타입의 방향마다 진행
+    - process: cctv 타입별로 정해진 방향으로 색칠
+    - dfs: 다음 cctv로 진행
+    - cctv 타입별로 정해진 방향으로 색칠한거 해제
+"""
+
+
 # dfs
 def dfs(graph:List[List[str]],level:int)->None:
 
@@ -19,12 +46,9 @@ def dfs(graph:List[List[str]],level:int)->None:
     col, row, type = cctvs[level] # 0,0,'1'
 
     for direction in directions[int(type)-1]:
-        # 그래프 순회 및 체크
-        process(col, row, direction, copy_graph)
-        # 현재 그래프에서 dfs
-        dfs(copy_graph, level + 1)
-        # 그래프 리셋
-        copy_graph = [ element[::] for element in graph]
+        process(col, row, direction, copy_graph) # 그래프 순회 및 체크
+        dfs(copy_graph, level + 1) # 현재 그래프에서 dfs
+        copy_graph = [ element[::] for element in graph] # 그래프 리셋
 
 # 그래프 순회 및 체크
 def process(row:int, col:int, direction:List, graph:List[List[str]]):
@@ -55,6 +79,7 @@ if __name__ == "__main__":
     graph = [ list(input().split()) for _ in range(n)]
     mn = sys.maxsize
     
+    # 1. 초기화
     # cctv 정보 저장
     cctvs = [] 
     for row in range(n):
@@ -73,5 +98,8 @@ if __name__ == "__main__":
         [[0, 1, 2, 3]] # cctv 5
     ]
 
+    # 2. dfs
     dfs(graph, 0)
+
+    # 3. 정답 출력
     print(mn)
