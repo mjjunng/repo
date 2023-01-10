@@ -27,3 +27,40 @@ def solution(info, edges):
                 visited[i] = 0
     search(0, 1, 0)
     return answer
+
+'''
+    두 번째 풀이 방법: dfs
+    다음으로 갈 수 있는 노드 저장해서 탐색 
+    - O(n * 2 ** n)
+'''
+answer = 0
+def solution(info, edges):
+    graph = [[] for _ in range(len(info))]  # graph[부모노드] = [자식 노드]
+    for p, c in edges:
+        graph[p].append(c)
+    possible = []   # 다음 노드로 갈 수 있는 노드 저장 
+    
+    for node in graph[0]:
+        possible.append(node)
+    
+    def dfs(pnode, sheep, wolf, possible):
+        global answer
+        # print(pnode, possible)
+        if wolf >= sheep:
+            return 
+        answer = max(answer, sheep)
+
+        for i in range(len(possible)):
+            nxt = possible[:]
+            cur = nxt.pop(i)
+            for c in graph[cur]:
+                nxt.append(c)
+                
+            if info[cur] == 0:
+                dfs(cur, sheep+1, wolf, nxt)
+            else:
+                dfs(cur, sheep, wolf+1, nxt)
+
+    dfs(0, 1, 0, possible)
+
+    return answer
