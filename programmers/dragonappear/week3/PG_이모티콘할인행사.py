@@ -18,15 +18,15 @@ def solution(users, emoticons):
     rates = [10 ,20, 30, 40]
     discounts = []
     # 이모티콘 수열 구하기
-    dfs([0]*len(emoticons),0)
+    dfs([0]*len(emoticons),0) # 4^m (m = len(emoticons))
     
     # 완전탐색
-    for discount_index in range(len(discounts)):
+    for discount_index in range(len(discounts)): # 4^m (m = len(emoticons))
         join:int = 0 
         price:List = [0] * len(users)
 
-        for emoticon_index in range(len(emoticons)):
-            for user_index in range(len(users)):
+        for emoticon_index in range(len(emoticons)): # O(1)
+            for user_index in range(len(users)): # O(n) : (n = len(users))
                 # 할인율 체크
                 if users[user_index][0] <= discounts[discount_index][emoticon_index]:
                     price[user_index] += emoticons[emoticon_index] *  (100 - discounts[discount_index][emoticon_index]) / 100
