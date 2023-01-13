@@ -11,10 +11,6 @@ def solution(record):
         # 닉네임 변경: data[id] = old_name -> data[id] = new_name 
         elif i.split()[0] == "Change":
             data[i.split()[1]] = i.split()[2]
-        # 퇴장: 닉네임 변경한 경우 저장값 갱신해야 함  
-        else:
-            if i.split()[1] in data.items():
-                data[i.split()[1]] = i.split()[2]
             
     for i in record:
         if i.split()[0] == "Enter":
