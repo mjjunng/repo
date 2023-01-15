@@ -68,3 +68,13 @@ baekjoon
 - [양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)
 
 #### 01/13 금요일 - 발표자 : 정민지
+
+### 4주차 문제 목록
+
+- [치즈](https://www.acmicpc.net/problem/2638)
+- [레이저통신](https://www.acmicpc.net/problem/6087)
+- [주사위](https://www.acmicpc.net/problem/1041)
+- [치킨배달](https://www.acmicpc.net/problem/15686)
+- [퇴사](https://www.acmicpc.net/problem/14501)
+
+#### 01/20 금요일 - 발표자 : 형섭
