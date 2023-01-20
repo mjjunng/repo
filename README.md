@@ -78,3 +78,13 @@ baekjoon
 - [퇴사](https://www.acmicpc.net/problem/14501)
 
 #### 01/20 금요일 - 발표자 : 예솜
+
+### 5주차 문제 목록
+
+- [양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
+- [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
+- [점 찍기](https://school.programmers.co.kr/learn/courses/30/lessons/140107)
+- [블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/60063)
+- [마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)
+
+#### 01/27 금요일 - 발표자 : 이유영
