@@ -25,7 +25,6 @@ def bfs(sy, sx, ey, ex):
 
     while q:
         y, x, dir = q.popleft()
-        print("now sibal ", y, x)
         for i in range(4):
             ny = y + dy[i]
             nx = x + dx[i]
