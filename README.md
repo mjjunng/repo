@@ -77,7 +77,7 @@ baekjoon
 - [치킨배달](https://www.acmicpc.net/problem/15686)
 - [퇴사](https://www.acmicpc.net/problem/14501)
 
-#### 01/20 금요일 - 발표자 : 예솜
+#### 01/20 금요일
 
 ### 5주차 문제 목록
 
@@ -87,4 +87,4 @@ baekjoon
 - [블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/60063)
 - [마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)
 
-#### 01/27 금요일 - 발표자 : 이유영
+#### 01/27 금요일 - 발표자 : 예솜
