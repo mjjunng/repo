@@ -18,14 +18,20 @@ def solution(n, m, x, y, r, c, k):
     # 2.왔다갔다 처리
     rest = k-dist
     
+    # 더 내려갈 횟수 정하기
+    # min(배열 최하단까지의 거리,d할수있는 최소 횟수)
     dplus=min(n-max(x,r),rest//2)
-    rest-=dplus*2
+    # du하기
+    rest-=dplus*2 
     
+    # 더 왼쪽으로 갈 횟수 정하기
+    # min(현재 위치에서 목적지 col까지 거리, l 할수있는 최소 횟수)
     lplus=min(min(y,c)-1,rest//2)
+    # lr하기
     rest-=lplus*2
     
     # 3.결과 도출
-    return 'd'*(dcnt+dplus)+ 'l'*(lcnt+lplus)+ "rl"*(rest//2) + 'r'*(rcnt+lplus) + 'u'*(dplus+ucnt)
+    return 'd'*(dcnt+dplus)+ 'l'*(lcnt+lplus)+ "rl"*(rest//2) + 'r'*(rcnt+lplus) + 'u'*(ucnt+dplus)
 
 print(solution(3,4,2,3,3,1,5))
 print(solution(2,2,1,1,2,2,2))
