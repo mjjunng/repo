@@ -1,9 +1,7 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/60063
-# https://tech.kakao.com/2019/10/02/kakao-blind-recruitment-2020-round1/
 from collections import deque
 
 def solution(board):
-    
     # 현재 좌표에서 이동가능한 좌표 리턴
     def move(pos1,pos2):
         ret=[]
@@ -15,13 +13,13 @@ def solution(board):
         # 가로에서 회전
         if pos1[0]==pos2[0]:
             for r in rotate:
-                if graph[pos1[0]+r][pos1[1]]==0 and graph[pos2[0]+r][pos2[1]]==0:
+                if graph[pos1[0]+r][pos1[1]]==0 and graph[pos2[0]+r][pos2[1]]==0: # 회전할 수 있는지 체크
                     ret.append({(pos1[0]+r,pos1[1]),(pos1[0],pos1[1])})
                     ret.append({(pos2[0]+r,pos2[1]),(pos2[0],pos2[1])})
         # 세로에서 회전
         elif pos1[1]==pos2[1]:
             for r in rotate:
-                if graph[pos1[0]][pos1[1]+r]==0 and graph[pos2[0]][pos2[1]+r]==0:
+                if graph[pos1[0]][pos1[1]+r]==0 and graph[pos2[0]][pos2[1]+r]==0: # 회전할 수 있는지 체크
                     ret.append({(pos1[0],pos1[1]),(pos1[0],pos1[1]+r)})
                     ret.append({(pos2[0],pos2[1]),(pos2[0],pos2[1]+r)})
             

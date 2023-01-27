@@ -5,9 +5,12 @@ def solution(storey):
     # Base Condition
     if storey<10: return storey if storey <= 5 else 10-storey+1
     one,ten = storey % 10,(storey // 10) % 10 # 1의 자리,10의 자리
-    if one>5: return (10-one) + solution((storey+10)//10)
-    elif one==5: return 5 + solution( ((storey+10)//10) if ten>=5 else (storey//10))
-    else: return one + solution(storey//10)
+    if one>5: 
+        return (10-one) + solution((storey+10)//10)
+    elif one==5: 
+        return 5 + solution( ((storey+10)//10) if ten>=5 else (storey//10))
+    else: 
+        return one + solution(storey//10)
 
 print(solution(2554))
 
