@@ -11,7 +11,6 @@ def solution(storey):
         return 5 + solution( ((storey+10)//10) if ten>=5 else (storey//10))
     else: 
         return one + solution(storey//10)
-
 print(solution(2554))
 
 # 반복

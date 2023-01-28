@@ -1,50 +1,49 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/60063
 from collections import deque
-
 def solution(board):
+    
+    # check out of board
+    def OOB(r,c): return not(0<=r<N) or not(0<=c<N)
+    
     # 현재 좌표에서 이동가능한 좌표 리턴
-    def move(pos1,pos2):
+    def move(p1,p2):
+            
         ret=[]
-        # 좌우상하 이동
+        # 좌우상하
         for dr,dc in dr_dc:
-            if graph[pos1[0]+dr][pos1[1]+dc]==0 and graph[pos2[0]+dr][pos2[1]+dc]==0:
-                ret.append({(pos1[0]+dr,pos1[1]+dc),(pos2[0]+dr,pos2[1]+dc)})
+            if OOB(p1[0]+dr,p1[1]+dc) or OOB(p2[0]+dr,p2[1]+dc): continue
+            if board[p1[0]+dr][p1[1]+dc]==0 and board[p2[0]+dr][p2[1]+dc]==0:
+                ret.append(((p1[0]+dr,p1[1]+dc),(p2[0]+dr,p2[1]+dc)))
         
         # 가로에서 회전
-        if pos1[0]==pos2[0]:
-            for r in rotate:
-                if graph[pos1[0]+r][pos1[1]]==0 and graph[pos2[0]+r][pos2[1]]==0: # 회전할 수 있는지 체크
-                    ret.append({(pos1[0]+r,pos1[1]),(pos1[0],pos1[1])})
-                    ret.append({(pos2[0]+r,pos2[1]),(pos2[0],pos2[1])})
+        if p1[0]==p2[0]:
+            for ro in rotate:
+                if OOB(p1[0]+ro,p1[1]) or OOB(p2[0]+ro,p2[1]): continue
+                if board[p1[0]+ro][p1[1]]==0 and board[p2[0]+ro][p2[1]]==0:
+                    ret.append(((p1[0],p1[1]),(p1[0]+ro,p1[1]))) 
+                    ret.append(((p2[0]+ro,p2[1]),(p2[0],p2[1]))) 
         # 세로에서 회전
-        elif pos1[1]==pos2[1]:
-            for r in rotate:
-                if graph[pos1[0]][pos1[1]+r]==0 and graph[pos2[0]][pos2[1]+r]==0: # 회전할 수 있는지 체크
-                    ret.append({(pos1[0],pos1[1]),(pos1[0],pos1[1]+r)})
-                    ret.append({(pos2[0],pos2[1]),(pos2[0],pos2[1]+r)})
-            
+        elif p1[1]==p2[1]:
+            for ro in rotate:
+                if OOB(p1[0],p1[1]+ro) or OOB(p2[0],p2[1]+ro): continue
+                if board[p1[0]][p1[1]+ro]==0 and board[p2[0]][p2[1]+ro]==0:
+                    ret.append(((p1[0],p1[1]),(p1[0],p1[1]+ro))) 
+                    ret.append(((p2[0],p2[1]+ro),(p2[0],p2[1])))
         return ret
-    
+        
+        
     N=len(board)
-    dr_dc=[(1,0), (0,1), (-1,0), (0,-1)]
+    dr_dc=[(0,1),(0,-1),(1,0),(-1,0)]
     rotate=[1,-1]
-    
-    graph=[[1]*(N+2) for _ in range(N+2)]
-    for i in range(N):
-        for j in range(N):
-            graph[i+1][j+1] = board[i][j]
-    
-    q = deque([[(1,1),(1,2),0]])
-    visit = [{(1,1),(1,2)}]
+    q=deque([ ((0,0),(0,1),0) ])
+    visit=set(((0,0),(0,1)))
     
     while q:
-        pos1,pos2,dist=q.popleft()
-        dist+=1
-        for rst in move(pos1,pos2):
-            if (N,N) in rst:
-                return dist
-            if rst not in visit:
-                q.append(list(rst)+[dist])
-                visit.append(rst)
+        p1,p2,dist=q.popleft()
+        for mov in move(p1,p2):
+            if (N-1,N-1) in mov: return dist+1
+            if mov not in visit:
+                q.append(tuple(list(mov)+[dist+1]))
+                visit.add(mov)
                 
 print(solution([[0, 0, 0, 1, 1],[0, 0, 0, 1, 0],[0, 1, 0, 1, 1],[1, 1, 0, 0, 1],[0, 0, 0, 0, 0]]))
