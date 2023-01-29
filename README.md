@@ -87,4 +87,14 @@ baekjoon
 - [블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/60063)
 - [마법의 엘리베이터](https://school.programmers.co.kr/learn/courses/30/lessons/148653)
 
-#### 01/27 금요일 - 발표자 : 예솜
+#### 01/27 금요일 - ~~발표자 : 예솜~~
+
+### 6주차 문제 목록
+
+- [가장 큰 정사각형](https://www.acmicpc.net/problem/1915)
+- [카드 구매하기](https://www.acmicpc.net/problem/11052)
+- [주사위 굴리기](https://www.acmicpc.net/problem/14499)
+- [청소년 상어](https://www.acmicpc.net/problem/19236)
+- [움직이는 미로 탈출](https://www.acmicpc.net/problem/16954)
+
+#### 02/03 금요일 - 발표자 : 예솜
