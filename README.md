@@ -97,4 +97,14 @@ baekjoon
 - [청소년 상어](https://www.acmicpc.net/problem/19236)
 - [움직이는 미로 탈출](https://www.acmicpc.net/problem/16954)
 
-#### 02/03 금요일 - 발표자 : 예솜
+#### 02/03 금요일 - ~~발표자 : 예솜~~
+
+### 7주차 문제 목록
+
+- [광고 삽입](https://school.programmers.co.kr/learn/courses/30/lessons/72414)
+- [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)
+- [기지국 설치](https://school.programmers.co.kr/learn/courses/30/lessons/12979)
+- [순위 검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412)
+- [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
+
+#### 02/10 금 - 발표자 : 이유영 
