@@ -3,7 +3,7 @@ from sys import stdin,stdout
 from collections import deque
 input,write=stdin.readline,stdout.write
 
-def solve():
+def bfs():
     visit=[[False] * 8 for _ in range(8)]
     visit[7][0]=True
     q=deque([[7,0]])
@@ -19,6 +19,5 @@ def solve():
     return 0
     
 board= [list(input().strip()) for _ in range(8)]
-#dr_dc=[[0,1],[0,-1],[-1,0],[1,0],[1,-1],[1,1],[-1,-1],[-1,1],[0,0]]
-dr_dc=[[0,1],[0,-1],[-1,0],[-1,-1],[-1,1],[0,0]]
-print(solve())
+dr_dc=[[0,1],[0,-1],[-1,0],[1,0],[1,-1],[1,1],[-1,-1],[-1,1],[0,0]]
+print(bfs())
