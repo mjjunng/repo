@@ -45,3 +45,37 @@ if __name__ == "__main__":
                     ans = tmp
 
     print(ans ** 2)
+    
+    
+import sys
+
+
+'''
+    풀이 방법 2: dp
+    
+    dp[i][j] : i, j 를 오른쪽 꼭짓점으로 가지는 정사각형의 최대 길이 
+    
+'''
+
+if __name__ == "__main__":
+    sys.stdin = open("input.txt", "rt")
+    n, m = map(int, input().split())
+    board = []
+    dp = [[0 for _ in range(m)] for _ in range(n)]
+    ans = 0
+
+    for _ in range(n):
+        board.append(list(map(int, input())))
+
+    for i in range(n):
+        for j in range(m):
+            if i == 0 or j == 0:
+                dp[i][j] = board[i][j]
+            elif board[i][j] == 0:
+                dp[i][j] = 0
+            else:
+                dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
+
+            ans = max(dp[i][j], ans)
+
+    print(ans ** 2)
