@@ -1,5 +1,5 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/152995
-# https://sundryy.tistory.com/109
+# 참고: https://sundryy.tistory.com/109
 from typing import List
 """
 N 범위: [1,10만] -> O(nlogn)
