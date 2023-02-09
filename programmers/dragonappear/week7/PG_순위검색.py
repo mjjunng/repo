@@ -3,8 +3,10 @@ from collections import defaultdict
 from bisect import bisect_left
 
 """
-풀이1 트라이
+트라이
 """
+
+cnt = 0
 
 
 class Node:
@@ -43,11 +45,9 @@ class Trie:
                 self.search(n, arr[:])
 
 
-cnt = 0
-
-
 def solution(info, query):
     global cnt
+
     answer = []
     trie = Trie()
 
