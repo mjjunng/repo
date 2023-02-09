@@ -2,6 +2,10 @@
 from collections import defaultdict
 from bisect import bisect_left
 
+"""
+풀이1 트라이
+"""
+
 
 class Node:
     def __init__(self) -> None:
