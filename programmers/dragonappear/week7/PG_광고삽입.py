@@ -1,9 +1,12 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/72414
 # 참고: https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/#%EB%AC%B8%EC%A0%9C-5-%EA%B4%91%EA%B3%A0-%EC%82%BD%EC%9E%85
 
-# N=[1,3*10^5]
-# O(N)
-# 누적합 문제
+"""
+누적합
+N=[1,3*10^5]
+O(N)
+"""
+
 
 def solution(play_time, adv_time, logs):
 
