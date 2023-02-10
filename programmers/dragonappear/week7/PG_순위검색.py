@@ -3,7 +3,7 @@ from collections import defaultdict
 from bisect import bisect_left
 
 """
-트라이
+자료구조 - trie
 """
 
 cnt = 0

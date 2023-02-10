@@ -1,7 +1,10 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/152995
 # 참고: https://sundryy.tistory.com/109
 from typing import List
+
 """
+그리디
+
 N 범위: [1,10만] -> O(nlogn)
 
 인센티브를 받지 못하는 사람은 걸러야 함
