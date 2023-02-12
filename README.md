@@ -108,3 +108,13 @@ baekjoon
 - [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
 
 #### 02/10 금 - 발표자 : 이유영 
+
+### 8주차 문제 목록
+
+- [파일 합치기](https://www.acmicpc.net/problem/11066)
+- [이차원 배열과 연산](https://www.acmicpc.net/problem/17140)
+- [부녀 회장이 될테야](https://www.acmicpc.net/problem/2775)
+- [Two Dots](https://www.acmicpc.net/problem/16929)
+- [병든 나이트](https://www.acmicpc.net/problem/1783)
+
+#### 02/17 금 - 발표자 : 윤용현
