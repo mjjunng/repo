@@ -117,4 +117,4 @@ baekjoon
 - [Two Dots](https://www.acmicpc.net/problem/16929)
 - [병든 나이트](https://www.acmicpc.net/problem/1783)
 
-#### 02/17 금 - 발표자 : 윤용현
+#### 02/17 금 - 발표자 : 
