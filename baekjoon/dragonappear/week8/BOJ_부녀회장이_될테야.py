@@ -2,6 +2,10 @@
 from sys import stdin
 input = stdin.readline
 
+"""
+dp
+"""
+
 
 def solve():
     K = int(input())
