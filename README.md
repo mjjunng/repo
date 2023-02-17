@@ -117,4 +117,14 @@ baekjoon
 - [Two Dots](https://www.acmicpc.net/problem/16929)
 - [병든 나이트](https://www.acmicpc.net/problem/1783)
 
-#### 02/17 금 - 발표자 : 
+#### 02/17 금 - 발표자 : 정민지
+
+### 9주차 문제 목록
+
+- [혼자 놀기의 달인](https://school.programmers.co.kr/learn/courses/30/lessons/131130)
+- [뒤에 있는 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/154539)
+- [택배상자](https://school.programmers.co.kr/learn/courses/30/lessons/131704)
+- [미로탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993)
+- [경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259)
+
+#### 02/24 금 - 발표자 : 윤용현 
