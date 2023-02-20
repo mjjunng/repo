@@ -3,6 +3,10 @@ from sys import stdin
 from bisect import bisect_left, bisect_right
 input = stdin.readline
 
+"""
+구현
+"""
+
 
 def sorting(arr):
     arr.sort()
