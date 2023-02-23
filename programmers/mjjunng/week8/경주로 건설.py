@@ -47,7 +47,7 @@ def solution(board):
     return answer
 
 
-# sol2) bfs -- 최단 거리 문제는 bfs로 풀기!!
+# sol2) bfs --> 최단 거리 문제는 bfs로 풀기!!
 from collections import deque
 
 def solution(board):
