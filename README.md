@@ -128,3 +128,13 @@ baekjoon
 - [경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259)
 
 #### 02/24 금 - 발표자 : 윤용현 
+
+### 10주차 문제 목록
+
+- [Strongly Connected Component](https://www.acmicpc.net/problem/2150)
+- [최소 힙](https://www.acmicpc.net/problem/1927)
+- [아기 상어](https://www.acmicpc.net/problem/16236)
+- [미세먼지 안녕!](https://www.acmicpc.net/problem/17144)
+- [균형](https://www.acmicpc.net/problem/22968)
+
+#### 03/03 금 - 발표자 : 예솜 
