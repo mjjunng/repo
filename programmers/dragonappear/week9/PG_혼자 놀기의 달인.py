@@ -9,7 +9,7 @@ def solution(cards):
 
     def init():
         for e in box2:
-            vis[e+1] = True
+            vis[e+1] = False
 
     N = len(cards)
     mx = -1
