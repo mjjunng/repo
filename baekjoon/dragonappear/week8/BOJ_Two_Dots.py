@@ -4,6 +4,11 @@ input = stdin.readline
 setrecursionlimit(int(1e9))
 
 
+"""
+dfs로 사이클 판별
+"""
+
+
 def dfs(r, c, pr, pc, color):
     for dr, dc in dr_dc:
         nr, nc = r+dr, c+dc

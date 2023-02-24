@@ -3,7 +3,9 @@
 from sys import stdin
 input = stdin.readline
 
-
+"""
+dp
+"""
 for _ in range(int(input())):
     N, A = int(input()), [0] + list(map(int, input().split()))
     S = [0 for _ in range(N+1)]  # S[i]는 1번부터 i번까지의 누적합
