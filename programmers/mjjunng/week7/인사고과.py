@@ -76,4 +76,27 @@ def solution(scores):
                     answer += 1
     return answer + 1
     
+    
+# sol 3) 구현: 통과!  
+# 두 번 정렬로 O(n)으로 비교 가능 
+
+def solution(scores):
+    answer = 1
+    wonho_score = scores[0]
+    scores.sort(key=lambda x:(-x[0], x[1]))
+    pre = 0 # 이전 동료 평가 점수 
+    
+    for i in scores:
+        if i[1] < pre:   
+            if i == wonho_score:
+                return -1
+            continue
+            
+        pre = i[1]
+        
+        if i[0] + i[1] > wonho_score[0] + wonho_score[1]:
+            answer += 1
+        
+   
+    return answer
 
