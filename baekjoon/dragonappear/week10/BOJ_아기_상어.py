@@ -53,8 +53,7 @@ while fish:
     d, x, y = heappop(heap)
 
     # 물고기 먹기
-    board[x][y] = 0
-    board[sr][sc] = 0
+    board[x][y], board[sr][sc] = 0, 0
     fish -= 1
     cnt += 1
 

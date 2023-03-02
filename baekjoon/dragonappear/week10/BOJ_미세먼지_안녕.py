@@ -53,6 +53,8 @@ def clean(sr, sc, dr_dc):
             tmp[nr][nc] = 0
         r, c = nr, nc
 
+
+def copy():
     for i in range(R):
         for j in range(C):
             board[i][j] = tmp[i][j]
@@ -74,6 +76,7 @@ while t < T:
     tmp = [elem[:] for elem in board]
     clean(ur, uc, [(0, 1), (-1, 0), (0, -1), (1, 0)])
     clean(br, bc, [(0, 1), (1, 0), (0, -1), (-1, 0)])
+    copy()
     t += 1
 
 print(int(sum(board[i][j] for i in range(R)
