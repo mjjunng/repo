@@ -59,4 +59,70 @@ if __name__ == "__main__":
             print(k, -1)
             
             
-# sol2)  
+import sys
+sys.setrecursionlimit(10**6)
+
+'''
+Strongly Connected Component 문제를 푸는 방법
+1. Kosaraju 알고리즘
+- 정방향 그래프로 모든 노드에 대해서 dfs 수행 
+- dfs 종료되는 순서대로 stack에 append
+- stack에서 pop하면서, 역방향 dfs 수행 
+- 역방향 dfs 하면서 노드 stack에 append -> scc 
+
+'''
+# sol2) Kosaraju 알고리즘
+stack = []
+
+# 정방향 dfs
+def dfs(node, visited):
+    for i in board[node]:
+        if visited[i] == 0:
+            visited[i] = 1
+            dfs(i, visited)
+
+    stack.append(node)
+
+# 역방향 dfs
+def reversed_dfs(node, visited):
+    tmp.append(node)
+    for i in reversed_board[node]:
+        if visited[i] == 0:
+            visited[i] = 1
+            reversed_dfs(i, visited)
+
+
+if __name__ == "__main__":
+    sys.stdin = open("input.txt", "r")
+    v, e = map(int, input().split())
+    board = [[] for _ in range(v+1)]
+    reversed_board = [[] for _ in range(v+1)]
+    visited = [0 for _ in range(v+1)]
+    scc = []
+
+    for _ in range(e):
+        a, b = map(int, input().split())
+        board[a].append(b)
+        reversed_board[b].append(a)
+
+    for i in range(1, v+1):
+        if visited[i] == 0:
+            visited[i] = 1
+            dfs(i, visited)
+
+    visited = [0 for _ in range(v + 1)]
+
+    while stack:
+        tmp = []
+        now = stack.pop()
+        if visited[now] == 0:
+            visited[now] = 1
+            reversed_dfs(now, visited)
+            scc.append(sorted(tmp))
+
+    print(len(scc))
+    scc.sort()
+
+    for i in scc:
+        print(*i, -1)
+
