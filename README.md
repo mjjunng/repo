@@ -138,3 +138,11 @@ baekjoon
 - [균형](https://www.acmicpc.net/problem/22968)
 
 #### 03/03 금 - 발표자 : 예솜 
+
+### 11주차 문제 목록 : 고득점 kit 완전 탐색
+
+https://school.programmers.co.kr/learn/courses/30/parts/12230
+
+#### 03/10 금 - 발표자 : 유영
+
+### 12주차 모의고사 세션 - 03/18 금, 03/20 일
