@@ -25,7 +25,7 @@ def solution(tickets):
     
     return answer[0]
   
-# sol2) dfs + stack
+# sol2) stack
 from collections import defaultdict
 
 def solution(tickets):
