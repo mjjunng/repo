@@ -149,3 +149,9 @@ https://school.programmers.co.kr/learn/courses/30/parts/12230
 
 - 03/17 금 : 2시간, 3문제
 - 03/19 일 : 리뷰 세션
+
+### 13주차 문제 목록 : 고득점 kit DFS/BFS
+
+https://school.programmers.co.kr/learn/courses/30/parts/12421
+
+#### 03/24 금 - 발표자 : 윤용현
