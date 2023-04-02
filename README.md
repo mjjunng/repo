@@ -155,3 +155,11 @@ https://school.programmers.co.kr/learn/courses/30/parts/12230
 https://school.programmers.co.kr/learn/courses/30/parts/12421
 
 #### 03/24 금 - 발표자 : 윤용현
+
+### 14주차 모의고사 세션 - 03/31 금, 04/02 일
+
+- [행성 탐사](https://www.acmicpc.net/problem/5549)
+- [테트로미노](https://www.acmicpc.net/problem/14500)
+- [달이 차오른다, 가자.](https://www.acmicpc.net/problem/1194)
+
+
