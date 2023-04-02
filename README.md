@@ -162,4 +162,8 @@ https://school.programmers.co.kr/learn/courses/30/parts/12421
 - [테트로미노](https://www.acmicpc.net/problem/14500)
 - [달이 차오른다, 가자.](https://www.acmicpc.net/problem/1194)
 
+### 15주차 문제 목록 : 고득점 kit 동적계획법
 
+https://school.programmers.co.kr/learn/courses/30/parts/12263
+
+#### 04/07 금 - 발표자 : 정민지 
