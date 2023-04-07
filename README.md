@@ -172,10 +172,10 @@ https://school.programmers.co.kr/learn/courses/30/parts/12263
 
 1. 문제 목록 : 고득점 kit 힙, 이분탐색
 
-https://school.programmers.co.kr/learn/courses/30/parts/12117
-https://school.programmers.co.kr/learn/courses/30/parts/12486
+- https://school.programmers.co.kr/learn/courses/30/parts/12117
+- https://school.programmers.co.kr/learn/courses/30/parts/12486
 
--> 발표없이 코드 올리기
+👉 발표없이 코드만 !
 
 2. 모의고사 세션 : https://www.codetree.ai/training-field/mock-tests
 
