@@ -167,3 +167,15 @@ https://school.programmers.co.kr/learn/courses/30/parts/12421
 https://school.programmers.co.kr/learn/courses/30/parts/12263
 
 #### 04/07 금 - 발표자 : 정민지 
+
+### 16주차 
+
+1. 문제 목록 : 고득점 kit 힙, 이분탐색
+
+https://school.programmers.co.kr/learn/courses/30/parts/12117
+https://school.programmers.co.kr/learn/courses/30/parts/12486
+
+-> 발표없이 코드 올리기
+
+2. 모의고사 세션 : https://www.codetree.ai/training-field/mock-tests
+
